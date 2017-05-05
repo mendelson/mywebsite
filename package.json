@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "description": "Mateus Mendelson's website",
-  "repository": "https://github.com/angular/angular-seed",
+  "repository": "",
   "license": "MIT",
   "engines": {
     "node": "=6.10.2",
