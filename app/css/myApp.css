@@ -1,0 +1,90 @@
+/* Navbar */
+.navbar-default {
+  background-color: #191919;
+}
+
+.navbar-brand:hover {
+  color: rgba(255,255,255,.75) !important;
+}
+
+ul li a:hover {
+  color: rgba(255,255,255,.75) !important;
+}
+
+ul li a:active {
+  color: black;
+}
+
+/* Home */
+.profilePic {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.profilePic img {
+  display: inline;
+  /*margin: 0 auto;*/
+  margin-top: -20px;
+  margin-left: 0px;
+  height: 150%;
+  width: auto;
+}
+
+/* Footer */
+footer {
+  padding: 50px 0;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /*height: initial;*/
+
+  margin: 0 auto;
+    /*width:834px;*/
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+  /*line-height: 60px;*/
+  /*border-top: 1px solid #f8f8f8;*/
+  /*background-color: #f8f8f8;*/
+  /*background-color: #dfe2db;*/
+}
+
+.footerContent {
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+/* General */
+.section-heading {
+  margin-bottom: 0px;
+  float: left;
+  width: 100%;
+  border-bottom: 3px solid #9d9d9d;
+  margin-bottom: 50px;
+  margin
+}
+
+.section-heading-spacer {
+  float: left;
+  width: 200px;
+  border-top: 3px solid #e7e7e7;
+}
+
+hr {
+  /*margin-bottom: 50px;*/
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
