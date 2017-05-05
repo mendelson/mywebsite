@@ -1,7 +1,8 @@
 'use strict';
 
 var app = angular.module("myApp", ["ngRoute"]);
-app.config(function($routeProvider, $locationProvider) {
+// app.config(function($routeProvider, $locationProvider) {
+app.config(function($routeProvider) {
   $routeProvider
   .when("/", {
     templateUrl : "pages/home.html",
@@ -26,6 +27,5 @@ app.config(function($routeProvider, $locationProvider) {
   // $locationProvider.html5Mode({enabled: true, requireBase: false});
 });
 app.controller("HomeCtrl", function ($scope) {
-  console.log("e ae");
-  // console.log($location.path());
+
 });
