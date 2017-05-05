@@ -23,7 +23,7 @@ app.config(function($routeProvider, $locationProvider) {
     redirectTo: "/"
   });
 
-  $locationProvider.html5Mode({enabled: true, requireBase: false});
+  // $locationProvider.html5Mode({enabled: true, requireBase: false});
 });
 app.controller("HomeCtrl", function ($scope) {
   console.log("e ae");
