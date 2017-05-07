@@ -12,11 +12,18 @@ app.config(function($routeProvider) {
     templateUrl : "pages/home.html",
     controller: "HomeCtrl"
   })
-  .when("/view1", {
-    templateUrl : "pages/view1.html"
+  .when("/publications", {
+    templateUrl : "pages/publications.html",
+    controller: "PublicationsCtrl"
   })
-  .when("/view2", {
-    templateUrl : "pages/view2.html"
+  // .when("/view1", {
+  //   templateUrl : "pages/view1.html"
+  // })
+  // .when("/view2", {
+  //   templateUrl : "pages/view2.html"
+  // })
+  .when("/template", {
+    templateUrl : "pages/template.html"
   })
   .otherwise({
     // TO-DO: colocar uma página de 404 aqui
@@ -27,5 +34,8 @@ app.config(function($routeProvider) {
   // $locationProvider.html5Mode({enabled: true, requireBase: false});
 });
 app.controller("HomeCtrl", function ($scope) {
+
+});
+app.controller("PublicationsCtrl", function ($scope) {
 
 });

@@ -1,3 +1,70 @@
+/* General */
+#mainWrapper {
+  box-sizing: border-box;
+  min-height: 100%;
+  padding: 0 0 100px;
+  position: relative;
+}
+
+.section-heading {
+  margin-bottom: 0px;
+  float: left;
+  width: 100%;
+  border-bottom: 3px solid #9d9d9d;
+  margin-bottom: 50px;
+  margin
+}
+
+.section-heading-spacer {
+  float: left;
+  width: 200px;
+  border-top: 3px solid #e7e7e7;
+}
+
+hr {
+  /*margin-bottom: 50px;*/
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* Mobile/tablet */
+.show-on-tablet {
+  display: none;
+}
+
+.show-on-desktop {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .show-on-small {
+    display: block;
+  }
+
+  .hide-on-small {
+    display: none;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .show-on-large {
+    display: block;
+  }
+
+  .hide-on-large {
+    display: none;
+  }
+}
+
 /* Navbar */
 .navbar-default {
   background-color: #191919;
@@ -39,52 +106,13 @@ ul li a:active {
 
 /* Footer */
 footer {
-  padding: 50px 0;
-
-  position: absolute;
   bottom: 0;
+  height: 100px;
+  left: 0;
+  position: absolute;
   width: 100%;
-  /*height: initial;*/
-
-  margin: 0 auto;
-    /*width:834px;*/
-    height: auto;
-    overflow: hidden;
-    position: absolute;
-    bottom: 0;
-  /*line-height: 60px;*/
-  /*border-top: 1px solid #f8f8f8;*/
-  /*background-color: #f8f8f8;*/
-  /*background-color: #dfe2db;*/
 }
 
 .footerContent {
   border-top: 1px solid rgba(0,0,0,.1);
-}
-
-/* General */
-.section-heading {
-  margin-bottom: 0px;
-  float: left;
-  width: 100%;
-  border-bottom: 3px solid #9d9d9d;
-  margin-bottom: 50px;
-  margin
-}
-
-.section-heading-spacer {
-  float: left;
-  width: 200px;
-  border-top: 3px solid #e7e7e7;
-}
-
-hr {
-  /*margin-bottom: 50px;*/
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 0;
-  border-top: 1px solid rgba(0,0,0,.1);
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
 }
