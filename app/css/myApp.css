@@ -104,6 +104,15 @@ ul li a:active {
   width: auto;
 }
 
+/* Publications */
+.citations a {
+  color: black;
+}
+
+.citations a:hover {
+  color: black !important;
+}
+
 /* Footer */
 footer {
   bottom: 0;
