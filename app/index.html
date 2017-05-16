@@ -58,10 +58,12 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="#/home">Home</a>
+              <a ng-if="enUS" href="#/home">Home</a>
+              <a ng-if="ptBR" href="#/home">Home</a>
             </li>
             <li>
-              <a href="#/publications">Publications</a>
+              <a ng-if="enUS" href="#/publications">Publications</a>
+              <a ng-if="ptBR" href="#/publications">Publicações</a>
             </li>
             <li>
               <a href="#/cv">CV</a>
@@ -70,7 +72,8 @@
               <a href="#/out">Off</a>
             </li>
             <li>
-              <a href="#/credits">About this site</a>
+              <a ng-if="enUS" href="#/credits">About this site</a>
+              <a ng-if="ptBR" href="#/credits">Sobre este site</a>
             </li>
           </ul>
         </div>

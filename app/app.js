@@ -16,12 +16,6 @@ app.config(function($routeProvider, $locationProvider) {
     templateUrl : "pages/publications.html",
     controller: "PublicationsCtrl"
   })
-  // .when("/view1", {
-  //   templateUrl : "pages/view1.html"
-  // })
-  // .when("/view2", {
-  //   templateUrl : "pages/view2.html"
-  // })
   .when("/template", {
     templateUrl: "pages/template.html"
   })
@@ -35,16 +29,9 @@ app.config(function($routeProvider, $locationProvider) {
 
   // $locationProvider.html5Mode({enabled: true, requireBase: false});
 });
-// app.controller("HomeCtrl", function ($scope, $window) {
-app.controller("HomeCtrl", function ($scope, $window) {
-  // var lang = $window.navigator.language || $window.navigator.userLanguage;
-  // console.log(lang);
-  // if (lang === 'en-US') {
-  //   console.log("language is english");
-  // }
-  // else {
-  //   console.log("not ingles");
-  // }
+
+app.controller("HomeCtrl", function ($scope) {
+
 });
 app.controller("PublicationsCtrl", function ($scope) {
 
@@ -52,4 +39,24 @@ app.controller("PublicationsCtrl", function ($scope) {
 app.controller("404Ctrl", function ($scope) {
   console.log("teste");
   // $location.path("/home");
+});
+
+// Language selection
+app.run(function($rootScope, $window) {
+  $rootScope.ptBR = false;
+  $rootScope.enUS = false;
+  var lang = $window.navigator.language || $window.navigator.userLanguage;
+
+  if(lang === 'pt-BR')
+  {
+    $rootScope.ptBR = true;
+  }
+  else if (lang === 'en-US')
+  {
+    $rootScope.enUS = true;
+  }
+  else
+  {
+    $rootScope.enUS = true;
+  }
 });
