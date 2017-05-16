@@ -87,6 +87,10 @@ ul li a:active {
 }
 
 /* Home */
+.homeContent {
+  margin-top: 5vh;
+}
+
 .profilePic {
   width: 200px;
   height: 200px;
