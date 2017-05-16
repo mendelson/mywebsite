@@ -35,8 +35,16 @@ app.config(function($routeProvider, $locationProvider) {
 
   // $locationProvider.html5Mode({enabled: true, requireBase: false});
 });
-app.controller("HomeCtrl", function ($scope) {
-
+// app.controller("HomeCtrl", function ($scope, $window) {
+app.controller("HomeCtrl", function ($scope, $window) {
+  // var lang = $window.navigator.language || $window.navigator.userLanguage;
+  // console.log(lang);
+  // if (lang === 'en-US') {
+  //   console.log("language is english");
+  // }
+  // else {
+  //   console.log("not ingles");
+  // }
 });
 app.controller("PublicationsCtrl", function ($scope) {
 
