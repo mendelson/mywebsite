@@ -19,6 +19,9 @@ app.config(function($routeProvider, $locationProvider) {
   .when("/template", {
     templateUrl: "pages/template.html"
   })
+  .when("/about", {
+    templateUrl: "pages/about.html"
+  })
   .otherwise({
     // TO-DO: colocar uma página de 404 aqui
     // templateUrl: "pages/home.html"
