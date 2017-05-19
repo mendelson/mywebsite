@@ -12,9 +12,34 @@
     <!-- Page content-->
     <div class="row">
       <div class="col-md-12 col-sm-12">
-        <p>
-          TO DO
-        </p>
+        <h4 ng-if="enUS">
+          This website uses the following resources:
+        </h4>
+        <h4 ng-if="ptBR">
+          Este site utiliza os seguintes recursos:
+        </h4>
+
+        <br>
+        <ul>
+          <li>
+            <a target="_blank" href="https://angularjs.org/">AngularJS</a>
+          </li>
+          <br>
+          <li>
+            <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>
+          </li>
+          <br>
+          <li>
+            <a target="_blank" href="https://heroku.com">Heroku</a>
+          </li>
+          <br>
+          <li ng-if="enUS">
+            A highly modified version of <a target="_blank" href="https://github.com/BlackrockDigital/startbootstrap-landing-page">Landing Page</a>
+          </li>
+          <li ng-if="ptBR">
+            Uma versão altamente modificada do template <a target="_blank" href="https://github.com/BlackrockDigital/startbootstrap-landing-page">Landing Page</a>
+          </li>
+        </ul>
       </div>
     </div>
 
