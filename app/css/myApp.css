@@ -1,8 +1,12 @@
 /* General */
+.a {
+  color: initial;
+}
+
 #mainWrapper {
   box-sizing: border-box;
   min-height: 100%;
-  padding: 0 0 100px;
+  padding: 0 0 60px;
   position: relative;
 }
 
@@ -124,7 +128,7 @@ ul li a:active {
 /* Footer */
 footer {
   bottom: 0;
-  height: 100px;
+  height: 60px;
   left: 0;
   position: absolute;
   width: 100%;

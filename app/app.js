@@ -19,6 +19,9 @@ app.config(function($routeProvider, $locationProvider) {
   .when("/template", {
     templateUrl: "pages/template.html"
   })
+  .when("/social", {
+    templateUrl: "pages/social.html"
+  })
   .when("/about", {
     templateUrl: "pages/about.html"
   })
