@@ -1,21 +1,11 @@
-<div class="content-section">
-  <div class="container">
-
-    <!-- Page title -->
-    <div class="row">
-      <div class="col-lg-12">
-        <h2 class="section-heading">404</h2>
-      </div>
-    </div>
-
-    <!-- Page content-->
-    <div class="row">
-      <div class="col-md-12 col-sm-12">
-        <p>
-          Erro 404
-        </p>
-      </div>
-    </div>
-
-  </div>
+<link href="css/404style.css" rel="stylesheet" type="text/css"  media="all" />
+<br>
+<div class="wrap">
+	<div class="content">
+		<img src="public/img/error-img.png" title="error" />
+		<p ng-if="enUS"><span><label>O</label>hh.....</span> You Requested the page that is no longer there.</p>
+		<p ng-if="ptBR"><span><label>O</label>ps.....</span> Você solicitou uma página que não existe.</p>
+		<a ng-if="enUS" href="http://mmendelson.com">Back To Home</a>
+		<a ng-if="ptBR" href="http://mmendelson.com">Voltar à Home</a>
+	</div>
 </div>

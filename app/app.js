@@ -19,18 +19,15 @@ app.config(function($routeProvider, $locationProvider) {
   .when("/template", {
     templateUrl: "pages/template.html"
   })
-  .when("/social", {
-    templateUrl: "pages/social.html"
+  .when("/resources", {
+    templateUrl: "pages/resources.html"
   })
   .when("/about", {
     templateUrl: "pages/about.html"
   })
   .otherwise({
-    // TO-DO: colocar uma página de 404 aqui
-    // templateUrl: "pages/home.html"
     controller: "404Ctrl",
     templateUrl:"/pages/404.html"
-    // redirectTo: "/"
   });
 
   // $locationProvider.html5Mode({enabled: true, requireBase: false});

@@ -125,6 +125,11 @@ ul li a:active {
   color: black !important;
 }
 
+/* About */
+.about a:hover {
+  color: #337ab7 !important;
+}
+
 /* Footer */
 footer {
   bottom: 0;
@@ -136,4 +141,17 @@ footer {
 
 .footerContent {
   border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.icons a {
+  color: black;
+}
+
+.icons a:hover {
+  color: black !important;
+  text-decoration: none;
+}
+
+.img-icon {
+  width: 25px;
 }
