@@ -153,5 +153,15 @@ footer {
 }
 
 .img-icon {
-  width: 25px;
+  float: left;
+  margin-left: -3px;
+  margin-right: 5px;
+}
+
+#lattes-icon {
+  width: 23px;
+}
+
+#cv-icon {
+  width: 21px;
 }
