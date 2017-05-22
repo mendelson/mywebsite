@@ -105,6 +105,8 @@ ul li a:active {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
+  display: block;
+  margin: auto;
 }
 
 .profilePic img {
