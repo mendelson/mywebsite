@@ -54,7 +54,17 @@ p {
   display: none;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
+  .show-on-x-small {
+    display: block;
+  }
+
+  .hide-on-x-small {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px, max-width: 991px) {
   .show-on-small {
     display: block;
   }
@@ -176,4 +186,8 @@ footer {
 
 #cv-icon {
   width: 21px;
+}
+
+#strava-icon {
+  width: 23px;
 }
