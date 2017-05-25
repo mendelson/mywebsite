@@ -20,28 +20,65 @@ app.config(function($routeProvider, $locationProvider) {
     templateUrl: "pages/template.html"
   })
   .when("/resources", {
-    templateUrl: "pages/resources.html"
+    templateUrl: "pages/resources.html",
+    controller: "ResourcesCtrl"
   })
   .when("/about", {
-    templateUrl: "pages/about.html"
+    templateUrl: "pages/about.html",
+    controller: "AboutCtrl"
   })
   .otherwise({
-    controller: "404Ctrl",
-    templateUrl:"/pages/404.html"
+    templateUrl:"pages/404.html",
+    controller: "404Ctrl"
   });
 
   // $locationProvider.html5Mode({enabled: true, requireBase: false});
 });
 
 app.controller("HomeCtrl", function ($scope) {
-
+  // Google Analytics
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Home',
+    eventAction: 'access',
+    eventLabel: 'Home Page Access'
+  });
 });
 app.controller("PublicationsCtrl", function ($scope) {
-
+  // Google Analytics
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Publications',
+    eventAction: 'access',
+    eventLabel: 'Pulications Page Access'
+  });
+});
+app.controller("ResourcesCtrl", function ($scope) {
+  // Google Analytics
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Resources',
+    eventAction: 'access',
+    eventLabel: 'Resources Page Access'
+  });
+});
+app.controller("AboutCtrl", function ($scope) {
+  // Google Analytics
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'About',
+    eventAction: 'access',
+    eventLabel: 'About Page Access'
+  });
 });
 app.controller("404Ctrl", function ($scope) {
-  console.log("teste");
-  // $location.path("/home");
+  // Google Analytics
+  ga('send', {
+    hitType: 'event',
+    eventCategory: '404',
+    eventAction: 'access',
+    eventLabel: '404 Page Access'
+  });
 });
 
 // Language selection
