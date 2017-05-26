@@ -4,7 +4,10 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-40476736-2', 'auto');
+// Production
+ga('create', 'UA-40476736-3', 'auto');
+// Testing
+// ga('create', 'UA-40476736-2', 'auto');
 
 // Footer icons
 function iconClickLindekin () {
@@ -127,6 +130,24 @@ function proic2012_2013 () {
 }
 
 // Resources
+function seminariosTransportMode () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Resources',
+    eventAction: 'click',
+    eventLabel: 'Seminário Transport Mode PPGInf'
+  });
+}
+
+function seminariosSpoofing () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Resources',
+    eventAction: 'click',
+    eventLabel: 'Spoofing PPGInf'
+  });
+}
+
 function fgaAulaCI () {
   ga('send', {
     hitType: 'event',

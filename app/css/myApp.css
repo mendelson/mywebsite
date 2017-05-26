@@ -25,7 +25,7 @@
 
 .subtitle {
   float: left;
-  width: 50%;
+  width: 60%;
   border-bottom: 2px solid #9d9d9d;
   margin-bottom: 0px;
 }
@@ -145,6 +145,10 @@ ul li a:active {
 /* Resources */
 .content-margin-bottom {
   margin-bottom: 20px;
+}
+
+.resources li {
+  width: 55%;
 }
 
 /* About */
