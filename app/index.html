@@ -8,10 +8,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Mateus Mendelson</title>
-  <meta name="description" content="Mateus Mendelson">
+  <meta name="description" content="Mateus Mendelson's personal website">
   <meta name="author" content="Mateus Mendelson">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <base href="/" /> -->
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
 
@@ -48,8 +47,6 @@
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   [endif] -->
-
-  <!-- <base target="_blank"> -->
 </head>
 
 <body ng-app="myApp">
@@ -66,7 +63,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand topnav" href="#/">Mateus Mendelson</a>
+          <a class="navbar-brand topnav" href="#/" onclick="mendelsonClick()">Mateus Mendelson</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -83,9 +80,6 @@
               <a ng-if="enUS" href="#/resources">Resources</a>
               <a ng-if="ptBR" href="#/resources">Recursos</a>
             </li>
-            <!-- <li>
-            <a href="#/out">Off</a>
-          </li> -->
           <li>
             <a ng-if="enUS" href="#/about">About</a>
             <a ng-if="ptBR" href="#/about">Sobre o site</a>
@@ -156,14 +150,9 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.js"></script>
 
-<!-- In production use: -->
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script> -->
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="app.js"></script>
-<!-- <script src="view1/view1.js"></script> -->
-<!-- <script src="view2/view2.js"></script> -->
-<!-- <script src="home/home.js"></script> -->
 <script src="components/version/version.js"></script>
 <script src="components/version/version-directive.js"></script>
 <script src="components/version/interpolate-filter.js"></script>
