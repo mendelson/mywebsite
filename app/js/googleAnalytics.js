@@ -1,3 +1,13 @@
+// Header
+function mendelsonClick () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Header',
+    eventAction: 'click',
+    eventLabel: 'Mateus Mendelson Header'
+  });
+}
+
 // Footer icons
 function iconClickLindekin () {
   ga('send', {
@@ -69,6 +79,16 @@ function iconClickSteam () {
     eventCategory: 'Icon',
     eventAction: 'click',
     eventLabel: 'Steam'
+  });
+}
+
+// Home
+function zaghettoPage () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Home',
+    eventAction: 'click',
+    eventLabel: 'Zaghetto Homepage'
   });
 }
 
