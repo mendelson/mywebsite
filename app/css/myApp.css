@@ -151,6 +151,10 @@ ul li a:active {
   width: 55%;
 }
 
+.resources .collapsible {
+  margin-top: 20px;
+}
+
 /* About */
 .about a:hover {
   color: #337ab7 !important;

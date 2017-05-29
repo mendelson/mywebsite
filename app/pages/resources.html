@@ -9,74 +9,110 @@
       </div>
     </div>
 
-    <!-- Page content-->
-    <!-- Seminário Professora Celia -->
-    <div class="row">
-      <div class="col-lg-12">
-        <h4 ng-if="enUS" class="subtitle col-lg-12">PPGInf Seminars</h4>
-        <h4 ng-if="ptBR" class="subtitle col-lg-12">Seminários PPGInf</h4>
-      </div>
-    </div>
-    <div class="row content-margin-bottom">
-      <div class="col-md-12 col-sm-12">
-        <p>
-          <ul class="citations">
-            <li>
-              <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsb2UzZVhPN01UWEk/view?usp=sharing" onclick="seminariosTransportMode()">Transport Mode Detection Using Mobile Phones and Artificial Neural Networks for Accident Prevention</a>
-            </li>
-            <br>
-            <li>
-              <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsajNiMWREdmNBTDA/view?usp=sharing" onclick="seminariosSpoofing()">Detecção de Fraudes em Leitores de Impressões Digitais sem Contato Utilizando Descritores de Texturas e Redes Neurais Artificiais</a>
-            </li>
-          </ul>
-        </p>
-      </div>
-    </div>
 
-    <!-- FGA Class -->
-    <div class="row">
-      <div class="col-lg-12">
-        <h4 ng-if="enUS" class="subtitle col-lg-12">FGA Demo Class</h4>
-        <h4 ng-if="ptBR" class="subtitle col-lg-12">Prova Didática FGA</h4>
+    <!-- <uib-accordion close-others="false">
+      <div uib-accordion-group class="panel-default" is-open="status.open">
+        <uib-accordion-heading>
+          I can have markup, too! <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+        </uib-accordion-heading>
+        This is just some content to illustrate fancy headings.
       </div>
-    </div>
-    <div class="row content-margin-bottom">
-      <div class="col-md-12 col-sm-12">
-        <p>
-          <ul class="citations">
-            <li>
-              <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsczB5U0pYT1l1UWM/view?usp=sharing" onclick="fgaAulaCI()">Slides - Integração Contínua</a>
-            </li>
-            <br>
-            <li>
-              <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsczNkLUtfYWJ0eTQ/view?usp=sharing" onclick="fgaPlanoAulaCI()">Plano de Aula - Integração Contínua</a>
-            </li>
-          </ul>
-        </p>
-      </div>
-    </div>
+    </uib-accordion> -->
 
-    <!-- Banners -->
-    <div class="row">
-      <div class="col-lg-12">
-        <h4 class="subtitle col-lg-12">Banners</h4>
-      </div>
-    </div>
-    <div class="row content-margin-bottom">
-      <div class="col-md-12 col-sm-12">
-        <p>
-          <ul class="citations">
-            <li>
-              <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsajFHWjhXNGJvck0/view?usp=sharing" onclick="bannerProic2013_2014()">Banner ProIC 2013/2014</a>
-            </li>
-            <br>
-            <li>
-              <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsaGNzbUEzOGNJclk/view?usp=sharing" onclick="bannerProic2012_2013()">Banner ProIC 2012/2013</a>
-            </li>
-          </ul>
-        </p>
-      </div>
-    </div>
 
+    
+
+    <!-- <div class="row collapsible" ng-click="isCollapsed = !isCollapsed">
+    <div class="col-lg-12">
+    <h4 ng-if="enUS" class="subtitle col-lg-12">PPGInf Seminars</h4>
+    <h4 ng-if="ptBR" class="subtitle col-lg-12">Seminários PPGInf</h4>
   </div>
+</div>
+<hr>
+<div class="row content-margin-bottom" uib-collapse="isCollapsed">
+<div class="col-md-12 col-sm-12">
+<p>
+<ul class="citations">
+<li>
+<a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsb2UzZVhPN01UWEk/view?usp=sharing" onclick="seminariosTransportMode()">Transport Mode Detection Using Mobile Phones and Artificial Neural Networks for Accident Prevention</a>
+</li>
+<br>
+<li>
+<a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsajNiMWREdmNBTDA/view?usp=sharing" onclick="seminariosSpoofing()">Detecção de Fraudes em Leitores de Impressões Digitais sem Contato Utilizando Descritores de Texturas e Redes Neurais Artificiais</a>
+</li>
+</ul>
+</p>
+</div>
+</div> -->
+
+<!-- Page content-->
+<!-- Seminário Professora Celia -->
+<div class="row collapsible">
+  <div class="col-lg-12">
+    <h4 ng-if="enUS" class="subtitle col-lg-12">PPGInf Seminars</h4>
+    <h4 ng-if="ptBR" class="subtitle col-lg-12">Seminários PPGInf</h4>
+  </div>
+</div>
+<div class="row content-margin-bottom">
+  <div class="col-md-12 col-sm-12">
+    <p>
+      <ul class="citations">
+        <li>
+          <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsb2UzZVhPN01UWEk/view?usp=sharing" onclick="seminariosTransportMode()">Transport Mode Detection Using Mobile Phones and Artificial Neural Networks for Accident Prevention</a>
+        </li>
+        <br>
+        <li>
+          <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsajNiMWREdmNBTDA/view?usp=sharing" onclick="seminariosSpoofing()">Detecção de Fraudes em Leitores de Impressões Digitais sem Contato Utilizando Descritores de Texturas e Redes Neurais Artificiais</a>
+        </li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<!-- FGA Class -->
+<div class="row">
+  <div class="col-lg-12">
+    <h4 ng-if="enUS" class="subtitle col-lg-12">FGA Demo Class</h4>
+    <h4 ng-if="ptBR" class="subtitle col-lg-12">Prova Didática FGA</h4>
+  </div>
+</div>
+<div class="row content-margin-bottom">
+  <div class="col-md-12 col-sm-12">
+    <p>
+      <ul class="citations">
+        <li>
+          <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsczB5U0pYT1l1UWM/view?usp=sharing" onclick="fgaAulaCI()">Slides - Integração Contínua</a>
+        </li>
+        <br>
+        <li>
+          <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsczNkLUtfYWJ0eTQ/view?usp=sharing" onclick="fgaPlanoAulaCI()">Plano de Aula - Integração Contínua</a>
+        </li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<!-- Banners -->
+<div class="row">
+  <div class="col-lg-12">
+    <h4 class="subtitle col-lg-12">Banners</h4>
+  </div>
+</div>
+<div class="row content-margin-bottom">
+  <div class="col-md-12 col-sm-12">
+    <p>
+      <ul class="citations">
+        <li>
+          <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsajFHWjhXNGJvck0/view?usp=sharing" onclick="bannerProic2013_2014()">Banner ProIC 2013/2014</a>
+        </li>
+        <br>
+        <li>
+          <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsaGNzbUEzOGNJclk/view?usp=sharing" onclick="bannerProic2012_2013()">Banner ProIC 2012/2013</a>
+        </li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+</div>
 </div>

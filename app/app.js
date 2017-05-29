@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module("myApp", ["ngRoute"]);
+var app = angular.module("myApp", ["ngRoute", "ngAnimate", "ngSanitize", "ui.bootstrap"]);
 app.config(function($routeProvider, $locationProvider) {
   // app.config(function($routeProvider) {
   $routeProvider
@@ -54,6 +54,8 @@ app.controller("PublicationsCtrl", function ($scope) {
   });
 });
 app.controller("ResourcesCtrl", function ($scope) {
+  // $scope.isCollapsed = true;
+
   // Google Analytics
   ga('send', {
     hitType: 'event',
@@ -100,3 +102,7 @@ app.run(function($rootScope, $window) {
     $rootScope.enUS = true;
   }
 });
+
+app.config(['$locationProvider', function($locationProvider) {
+  $locationProvider.hashPrefix('');
+}]);
