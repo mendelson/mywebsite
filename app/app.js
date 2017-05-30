@@ -54,7 +54,10 @@ app.controller("PublicationsCtrl", function ($scope) {
   });
 });
 app.controller("ResourcesCtrl", function ($scope) {
-  // $scope.isCollapsed = true;
+  $scope.status = {
+    open1: false,
+    open2: false
+  };
 
   // Google Analytics
   ga('send', {

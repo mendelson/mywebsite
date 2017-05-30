@@ -16,6 +16,7 @@
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
   <!-- Custom CSS -->
   <link href="css/landing-page.css" rel="stylesheet">
@@ -28,13 +29,24 @@
   <!-- Scripts -->
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
   <script src="https://use.fontawesome.com/6aeb92b302.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="app.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+  <script src="js/ui-bootstrap-tpls-2.5.0.min.js"></script>
   <!-- Google Analytics -->
   <script>
   window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
   // Testing
-  // ga('create', 'UA-40476736-2', 'auto');
+  ga('create', 'UA-40476736-2', 'auto');
   // Production
-  ga('create', 'UA-40476736-3', 'auto');
+  // ga('create', 'UA-40476736-3', 'auto');
   ga('send', 'pageview');
   </script>
   <script async src='https://www.google-analytics.com/analytics.js'></script>
@@ -137,6 +149,9 @@
                   <a target="_blank" href="https://www.facebook.com/mateusmendelson.dasilva" onclick="iconClickFacebook()">
                     <i class="fa fa-facebook-square fa-2x pull-left"></i>
                   </a>
+                  <!-- <a  target="_blank" href="https://www.strava.com/athletes/9485255" onclick="iconClickPolar()">
+                    <img id="strava-icon" class="img-icon" src="public/img/polar-icon.png"/>
+                  </a> -->
                   <a  target="_blank" href="https://www.strava.com/athletes/9485255" onclick="iconClickStrava()">
                     <img id="strava-icon" class="img-icon" src="public/img/strava-icon.ico"/>
                   </a>
@@ -151,24 +166,6 @@
       </div>
     </footer>
   </div>
-
-  <!-- jQuery -->
-  <script src="js/jquery.js"></script>
-
-  <!-- Bootstrap Core JavaScript -->
-  <script src="js/bootstrap.js"></script>
-
-  <script src="bower_components/angular/angular.min.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
-  <script src="/bower_components/angular-animate/angular-animate.js"></script>
-  <script src="js/ui-bootstrap-collapse-2.5.0.min.js"></script>
-  <!-- <script src="js/ui-bootstrap-accordion-2.5.0.min.js"></script> -->
-  <!-- <script src="js/ui-bootstrap-custom-tpls-2.5.0.js"></script> -->
-  <script src="app.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
 
 </body>
 

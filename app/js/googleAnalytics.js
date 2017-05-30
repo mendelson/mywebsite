@@ -65,6 +65,14 @@ function iconClickFacebook () {
     eventLabel: 'Facebook'
   });
 }
+// function iconClickPolar () {
+//   ga('send', {
+//     hitType: 'event',
+//     eventCategory: 'Icon',
+//     eventAction: 'click',
+//     eventLabel: 'Polar'
+//   });
+// }
 function iconClickStrava () {
   ga('send', {
     hitType: 'event',

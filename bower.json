@@ -1,8 +1,8 @@
 {
   "name": "mywebsite",
   "description": "Mateus Mendelson's website",
-  "version": "0.0.1",
-  "homepage": "mmendelson.com",
+  "version": "1.0",
+  "homepage": "http://mmendelson.com",
   "license": "MIT",
   "private": true,
   "dependencies": {
@@ -10,9 +10,9 @@
     "angular-route": "~1.6.x",
     "angular-loader": "~1.6.x",
     "angular-mocks": "~1.6.x",
-    "html5-boilerplate": "^5.3.0",
-    "angular-sanitize": "^1.6.4",
-    "angular-animate": "^1.6.4"
+    "angular-sanitize": "~1.6.x",
+    "angular-animate": "~1.6.x",
+    "html5-boilerplate": "^5.3.0"
   },
   "resolutions": {
     "angular": "~1.6.x"
