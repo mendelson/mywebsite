@@ -9,6 +9,14 @@ function mendelsonClick () {
 }
 
 // Footer icons
+function iconClickTelegram () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Icon',
+    eventAction: 'click',
+    eventLabel: 'Telegram'
+  });
+}
 function iconClickLindekin () {
   ga('send', {
     hitType: 'event',
