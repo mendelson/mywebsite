@@ -73,14 +73,6 @@ function iconClickFacebook () {
     eventLabel: 'Facebook'
   });
 }
-// function iconClickPolar () {
-//   ga('send', {
-//     hitType: 'event',
-//     eventCategory: 'Icon',
-//     eventAction: 'click',
-//     eventLabel: 'Polar'
-//   });
-// }
 function iconClickStrava () {
   ga('send', {
     hitType: 'event',
@@ -117,7 +109,6 @@ function sbrt2016 () {
     eventLabel: 'SBrT 2016'
   });
 }
-
 function monografia () {
   ga('send', {
     hitType: 'event',
@@ -126,7 +117,6 @@ function monografia () {
     eventLabel: 'Monografia Graduação'
   });
 }
-
 function edubotICRA () {
   ga('send', {
     hitType: 'event',
@@ -135,7 +125,6 @@ function edubotICRA () {
     eventLabel: 'Edubot ICRA 2015'
   });
 }
-
 function proic2013_2014 () {
   ga('send', {
     hitType: 'event',
@@ -144,7 +133,6 @@ function proic2013_2014 () {
     eventLabel: 'ProIC 2013/2014'
   });
 }
-
 function proic2012_2013 () {
   ga('send', {
     hitType: 'event',
@@ -163,7 +151,6 @@ function seminariosTransportMode () {
     eventLabel: 'Seminário Transport Mode PPGInf'
   });
 }
-
 function seminariosSpoofing () {
   ga('send', {
     hitType: 'event',
@@ -172,7 +159,6 @@ function seminariosSpoofing () {
     eventLabel: 'Spoofing PPGInf'
   });
 }
-
 function fgaAulaCI () {
   ga('send', {
     hitType: 'event',
@@ -181,7 +167,6 @@ function fgaAulaCI () {
     eventLabel: 'Prova Didática FGA 2017'
   });
 }
-
 function fgaPlanoAulaCI () {
   ga('send', {
     hitType: 'event',
@@ -190,7 +175,6 @@ function fgaPlanoAulaCI () {
     eventLabel: 'Plano de Aula FGA 2017 - Integração Contínua'
   });
 }
-
 function bannerProic2013_2014 () {
   ga('send', {
     hitType: 'event',
@@ -199,7 +183,6 @@ function bannerProic2013_2014 () {
     eventLabel: 'Banner ProIC 2013/2014'
   });
 }
-
 function bannerProic2012_2013 () {
   ga('send', {
     hitType: 'event',

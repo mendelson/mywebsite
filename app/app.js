@@ -55,8 +55,9 @@ app.controller("PublicationsCtrl", function ($scope) {
 });
 app.controller("ResourcesCtrl", function ($scope) {
   $scope.status = {
-    open1: false,
-    open2: false
+    openSeminarios: false,
+    openFGADemo: false,
+    openBanners: false
   };
 
   // Google Analytics

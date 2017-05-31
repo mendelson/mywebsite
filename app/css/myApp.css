@@ -31,7 +31,6 @@
 }
 
 hr {
-  /*margin-bottom: 50px;*/
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
@@ -126,7 +125,6 @@ ul li a:active {
 
 .profilePic img {
   display: inline;
-  /*margin: 0 auto;*/
   margin-top: -20px;
   margin-left: 0px;
   height: 150%;
@@ -148,16 +146,56 @@ ul li a:active {
 }
 
 .resources li {
-  width: 55%;
+  width: 65%;
 }
 
-.resources .collapsible {
+.ng-binding {
+  padding: 10px;
+}
+
+.panel-group {
   margin-top: 20px;
+}
+
+.panel-heading {
+  background-color: initial !important;
+  padding: 10px 0px;
+}
+
+.panel-title {
+  width: 70%;
+  border-bottom: 2px solid #9d9d9d !important;
+  margin-bottom: 0;
+  border-radius: 0 !important;
+}
+
+.panel-body {
+  border-top: 0 !important;
+  padding: 0 !important;
+}
+
+.ng-scope {
+  margin-bottom: -8px;
+}
+
+.panel {
+  background-color: initial;
+  border: 0;
+  -webkit-box-shadow: initial;
+}
+
+.glyphicon {
+  width: 50px;
+  padding-left: 15px;
 }
 
 /* About */
 .about a:hover {
   color: #337ab7 !important;
+}
+
+.about {
+  margin-top: 20px;
 }
 
 /* Footer */
