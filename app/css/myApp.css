@@ -140,6 +140,10 @@ ul li a:active {
   color: black !important;
 }
 
+.publications li {
+  width: 75%;
+}
+
 /* Resources */
 .content-margin-bottom {
   margin-bottom: 20px;

@@ -17,6 +17,14 @@ function iconClickTelegram () {
     eventLabel: 'Telegram'
   });
 }
+function iconClickSkype () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Icon',
+    eventAction: 'click',
+    eventLabel: 'Skype'
+  });
+}
 function iconClickLindekin () {
   ga('send', {
     hitType: 'event',
@@ -117,6 +125,14 @@ function monografia () {
     eventLabel: 'Monografia Graduação'
   });
 }
+function wpos_wcomp2016 () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Publications',
+    eventAction: 'click',
+    eventLabel: 'WPOS/WCOMP 2016'
+  });
+}
 function edubotICRA () {
   ga('send', {
     hitType: 'event',
@@ -173,6 +189,22 @@ function fgaPlanoAulaCI () {
     eventCategory: 'Resources',
     eventAction: 'click',
     eventLabel: 'Plano de Aula FGA 2017 - Integração Contínua'
+  });
+}
+function monoGrad () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Resources',
+    eventAction: 'click',
+    eventLabel: 'Slides Projeto Final em Engenharia de Computação'
+  });
+}
+function slideWpos_wcomp2016 () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Resources',
+    eventAction: 'click',
+    eventLabel: 'Slides WPOS/WCOMP 2016'
   });
 }
 function bannerProic2013_2014 () {

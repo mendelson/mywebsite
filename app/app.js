@@ -23,6 +23,10 @@ app.config(function($routeProvider, $locationProvider) {
     templateUrl: "pages/resources.html",
     controller: "ResourcesCtrl"
   })
+  .when("/contact", {
+    templateUrl: "pages/contact.html",
+    controller: "ContactCtrl"
+  })
   .when("/about", {
     templateUrl: "pages/about.html",
     controller: "AboutCtrl"
@@ -45,6 +49,12 @@ app.controller("HomeCtrl", function ($scope) {
   });
 });
 app.controller("PublicationsCtrl", function ($scope) {
+  $scope.status = {
+    openProceedings: false,
+    openMono: false,
+    openMisc: false
+  };
+
   // Google Analytics
   ga('send', {
     hitType: 'event',
@@ -56,6 +66,8 @@ app.controller("PublicationsCtrl", function ($scope) {
 app.controller("ResourcesCtrl", function ($scope) {
   $scope.status = {
     openSeminarios: false,
+    openMono: false,
+    openWPOS_WCOMP: false,
     openFGADemo: false,
     openBanners: false
   };
@@ -66,6 +78,15 @@ app.controller("ResourcesCtrl", function ($scope) {
     eventCategory: 'Resources',
     eventAction: 'access',
     eventLabel: 'Resources Page Access'
+  });
+});
+app.controller("ContactCtrl", function ($scope) {
+  // Google Analytics
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Contact',
+    eventAction: 'access',
+    eventLabel: 'Contact Page Access'
   });
 });
 app.controller("AboutCtrl", function ($scope) {

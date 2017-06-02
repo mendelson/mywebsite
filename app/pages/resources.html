@@ -34,6 +34,43 @@
         </div>
       </div>
 
+      <!-- WPOS/WCOMP -->
+      <div uib-accordion-group is-open="status.openWPOS_WCOMP">
+        <uib-accordion-heading>
+          <h4><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openWPOS_WCOMP, 'glyphicon-chevron-right': !status.openWPOS_WCOMP}"></i>WPOS/WCOMP</h4>
+        </uib-accordion-heading>
+        <div class="row content-margin-bottom">
+          <div class="col-md-12 col-sm-12">
+            <p>
+              <ul class="citations">
+                <li>
+                  <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsb2FNSWNqV2JXeW8/view?usp=sharing" onclick="slideWpos_wcomp2016()">Slides 2016</a>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Monografias -->
+      <div uib-accordion-group class="panel-default" is-open="status.openMono">
+        <uib-accordion-heading>
+          <h4 ng-if="enUS"><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openMono, 'glyphicon-chevron-right': !status.openMono}"></i>Thesis</h4>
+          <h4 ng-if="ptBR"><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openMono, 'glyphicon-chevron-right': !status.openMono}"></i>Monografias</h4>
+        </uib-accordion-heading>
+        <div class="row content-margin-bottom">
+          <div class="col-md-12 col-sm-12">
+            <p>
+              <ul class="citations">
+                <li>
+                  <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsWGhPbEZrTGlNVTg/view?usp=sharing" onclick="monoGrad()">Slides - Detecção de fraudes em leitores de impressões digitais sem contato utilizando descritores de texturas e redes neurais artificiais</a>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
       <!-- FGA Class -->
       <div uib-accordion-group class="panel-default" is-open="status.openFGADemo">
         <uib-accordion-heading>
@@ -91,71 +128,71 @@
 
     <!-- Seminário Professora Celia -->
     <!-- <div class="row">
-      <div class="col-lg-12">
-        <h4 ng-if="enUS" class="subtitle col-lg-12">PPGInf Seminars</h4>
-        <h4 ng-if="ptBR" class="subtitle col-lg-12">Seminários PPGInf</h4>
-      </div>
-    </div>
-    <div class="row content-margin-bottom">
-      <div class="col-md-12 col-sm-12">
-        <p>
-          <ul class="citations">
-            <li>
-              <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsb2UzZVhPN01UWEk/view?usp=sharing" onclick="seminariosTransportMode()">Transport Mode Detection Using Mobile Phones and Artificial Neural Networks for Accident Prevention</a>
-            </li>
-            <br>
-            <li>
-              <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsajNiMWREdmNBTDA/view?usp=sharing" onclick="seminariosSpoofing()">Detecção de Fraudes em Leitores de Impressões Digitais sem Contato Utilizando Descritores de Texturas e Redes Neurais Artificiais</a>
-            </li>
-          </ul>
-        </p>
-      </div>
-    </div> -->
-
-    <!-- FGA Class -->
-    <!-- <div class="row">
-      <div class="col-lg-12">
-        <h4 ng-if="enUS" class="subtitle col-lg-12">FGA Demo Class</h4>
-        <h4 ng-if="ptBR" class="subtitle col-lg-12">Prova Didática FGA</h4>
-      </div>
-    </div>
-    <div class="row content-margin-bottom">
-      <div class="col-md-12 col-sm-12">
-        <p>
-          <ul class="citations">
-            <li>
-              <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsczB5U0pYT1l1UWM/view?usp=sharing" onclick="fgaAulaCI()">Slides - Integração Contínua</a>
-            </li>
-            <br>
-            <li>
-              <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsczNkLUtfYWJ0eTQ/view?usp=sharing" onclick="fgaPlanoAulaCI()">Plano de Aula - Integração Contínua</a>
-            </li>
-          </ul>
-        </p>
-      </div>
-    </div> -->
-
-    <!-- Banners -->
-    <!-- <div class="row">
-      <div class="col-lg-12">
-        <h4 class="subtitle col-lg-12">Banners</h4>
-      </div>
-    </div>
-    <div class="row content-margin-bottom">
-      <div class="col-md-12 col-sm-12">
-        <p>
-          <ul class="citations">
-            <li>
-              <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsajFHWjhXNGJvck0/view?usp=sharing" onclick="bannerProic2013_2014()">Banner ProIC 2013/2014</a>
-            </li>
-            <br>
-            <li>
-              <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsaGNzbUEzOGNJclk/view?usp=sharing" onclick="bannerProic2012_2013()">Banner ProIC 2012/2013</a>
-            </li>
-          </ul>
-        </p>
-      </div>
-    </div> -->
-
+    <div class="col-lg-12">
+    <h4 ng-if="enUS" class="subtitle col-lg-12">PPGInf Seminars</h4>
+    <h4 ng-if="ptBR" class="subtitle col-lg-12">Seminários PPGInf</h4>
   </div>
+</div>
+<div class="row content-margin-bottom">
+<div class="col-md-12 col-sm-12">
+<p>
+<ul class="citations">
+<li>
+<a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsb2UzZVhPN01UWEk/view?usp=sharing" onclick="seminariosTransportMode()">Transport Mode Detection Using Mobile Phones and Artificial Neural Networks for Accident Prevention</a>
+</li>
+<br>
+<li>
+<a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsajNiMWREdmNBTDA/view?usp=sharing" onclick="seminariosSpoofing()">Detecção de Fraudes em Leitores de Impressões Digitais sem Contato Utilizando Descritores de Texturas e Redes Neurais Artificiais</a>
+</li>
+</ul>
+</p>
+</div>
+</div> -->
+
+<!-- FGA Class -->
+<!-- <div class="row">
+<div class="col-lg-12">
+<h4 ng-if="enUS" class="subtitle col-lg-12">FGA Demo Class</h4>
+<h4 ng-if="ptBR" class="subtitle col-lg-12">Prova Didática FGA</h4>
+</div>
+</div>
+<div class="row content-margin-bottom">
+<div class="col-md-12 col-sm-12">
+<p>
+<ul class="citations">
+<li>
+<a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsczB5U0pYT1l1UWM/view?usp=sharing" onclick="fgaAulaCI()">Slides - Integração Contínua</a>
+</li>
+<br>
+<li>
+<a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsczNkLUtfYWJ0eTQ/view?usp=sharing" onclick="fgaPlanoAulaCI()">Plano de Aula - Integração Contínua</a>
+</li>
+</ul>
+</p>
+</div>
+</div> -->
+
+<!-- Banners -->
+<!-- <div class="row">
+<div class="col-lg-12">
+<h4 class="subtitle col-lg-12">Banners</h4>
+</div>
+</div>
+<div class="row content-margin-bottom">
+<div class="col-md-12 col-sm-12">
+<p>
+<ul class="citations">
+<li>
+<a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsajFHWjhXNGJvck0/view?usp=sharing" onclick="bannerProic2013_2014()">Banner ProIC 2013/2014</a>
+</li>
+<br>
+<li>
+<a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsaGNzbUEzOGNJclk/view?usp=sharing" onclick="bannerProic2012_2013()">Banner ProIC 2012/2013</a>
+</li>
+</ul>
+</p>
+</div>
+</div> -->
+
+</div>
 </div>

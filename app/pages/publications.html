@@ -1,5 +1,5 @@
 <div class="content-section">
-  <div class="container">
+  <div class="container publications">
 
     <!-- Page title -->
     <div class="row">
@@ -10,33 +10,75 @@
     </div>
 
     <!-- Page content-->
-    <div class="row">
-      <div class="col-md-12 col-sm-12">
-        <p>
-          <ul class="citations">
-            <li>
-              <a target="_blank" href="http://www.sbrt.org.br/sbrt2016/anais/ST30/1570271497.pdf" onclick="sbrt2016()">SILVA, M. M. E.; ZAGHETTO, A; ZAGHETTO, C., "Detecção de Fraudes em Leitores de Impressões Digitais sem Contato Utilizando Descritores de Texturas e Redes Neurais Artificiais," in <i>XXXIV Simpósio Brasileiro de Telecomunicações e Processamento de Sinais</i>, 2016, Santarém, Pará. Anais do XXXIV Simpósio Brasileiro de Telecomunicações e Processamento de Sinais, 2016.</a>
-            </li>
-            <br>
-            <li>
-              <a target="_blank" href="http://bdm.unb.br/handle/10483/13278" onclick="monografia()">SILVA, Mateus Mendelson Esteves da. <i>Detecção de fraudes em leitores de impressões digitais sem contato utilizando descritores de texturas e redes neurais artificiais</i>. 2015. xv, 65 f., il. Monografia (Bacharelado em Engenharia da Computação)—Universidade de Brasília, Brasília, 2015.</a>
-            </li>
-            <br>
-            <li>
-              <a href="" onclick="window.open('https://drive.google.com/file/d/0B5llfR7_3kcsS212OG5idEVYYVE/view?usp=sharing');window.open('http://developingworldrobotics.org/listing/project-edubot/');edubotICRA()">SILVA, M. M. E.; KUSSABA, H. T. M., "Project Edubot," in <i>Developing Countries Forum at ICRA 2015</i>, 2015, Seattle, Washington (abstract remote presentation).</a>
-            </li>
-            <br>
-            <li>
-              <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsZE1yYVlXNmY2VjQ/view?usp=sharing" onclick="proic2013_2014()">SILVA, M. M. E., "Localização e Mapeamento," in <i>XX Congresso de Iniciação Científica da UnB e XI Congresso de Iniciação Científica do Distrito Federal</i>, 2014, Brasília, Distrito Federal.</a>
-            </li>
-            <br>
-            <li>
-              <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsMkk2YzJ5LWFIckU/view?usp=sharing" onclick="proic2012_2013()">SILVA, M. M. E., "Implementação de Algoritmos Clássicos para Mapeamento de Ambientes," in <i>XIX Congresso de Iniciação Científica da UnB e X Congresso de Iniciação Científica do Distrito Federal</i>, 2013, Brasília, Distrito Federal.</a>
-            </li>
-          </ul>
-        </p>
+    <uib-accordion close-others="false">
+      <!-- Artigos em anais de congressos -->
+      <div uib-accordion-group is-open="status.openProceedings">
+        <uib-accordion-heading>
+          <h4 ng-if="enUS"><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openProceedings, 'glyphicon-chevron-right': !status.openProceedings}"></i>Conference Proceedings</h4>
+          <h4 ng-if="ptBR"><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openProceedings, 'glyphicon-chevron-right': !status.openProceedings}"></i>Artigos em Anais de Congressos</h4>
+        </uib-accordion-heading>
+        <div class="row content-margin-bottom">
+          <div class="col-md-12 col-sm-12">
+            <p>
+              <ul class="citations">
+                <li>
+                  <a target="_blank" href="http://www.sbrt.org.br/sbrt2016/anais/ST30/1570271497.pdf" onclick="sbrt2016()">SILVA, M. M. E.; ZAGHETTO, A; ZAGHETTO, C., "Detecção de Fraudes em Leitores de Impressões Digitais sem Contato Utilizando Descritores de Texturas e Redes Neurais Artificiais," in <i>XXXIV Simpósio Brasileiro de Telecomunicações e Processamento de Sinais</i>, 2016, Santarém, Pará. Anais do XXXIV Simpósio Brasileiro de Telecomunicações e Processamento de Sinais, 2016.</a>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+
+      <!-- Monografias -->
+      <div uib-accordion-group class="panel-default" is-open="status.openMono">
+        <uib-accordion-heading>
+          <h4 ng-if="enUS"><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openMono, 'glyphicon-chevron-right': !status.openMono}"></i>Thesis</h4>
+          <h4 ng-if="ptBR"><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openMono, 'glyphicon-chevron-right': !status.openMono}"></i>Monografias</h4>
+        </uib-accordion-heading>
+        <div class="row content-margin-bottom">
+          <div class="col-md-12 col-sm-12">
+            <p>
+              <ul class="citations">
+                <li>
+                  <a target="_blank" href="http://bdm.unb.br/handle/10483/13278" onclick="monografia()">SILVA, Mateus Mendelson Esteves da. <i>Detecção de fraudes em leitores de impressões digitais sem contato utilizando descritores de texturas e redes neurais artificiais</i>. 2015. xv, 65 f., il. Monografia (Bacharelado em Engenharia da Computação)—Universidade de Brasília, Brasília, 2015.</a>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Miscelâneas -->
+      <div uib-accordion-group class="panel-default" is-open="status.openMisc">
+        <uib-accordion-heading>
+          <h4><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openMisc, 'glyphicon-chevron-right': !status.openMisc}"></i>Misc</h4>
+        </uib-accordion-heading>
+        <div class="row content-margin-bottom">
+          <div class="col-md-12 col-sm-12">
+            <p>
+              <ul class="citations">
+                <li>
+                  <a target="_blank" href="http://wpos.cic.unb.br/artigos/wpos2016_apres_16_ok_alexandre_mateus_caue.pdf" onclick="wpos_wcomp2016()">SILVA, M. M. E.; ZAGHETTO, A; ZAGHETTO, C., "Detecção de Fraudes em Leitores de Impressões Digitais sem Contato Utilizando Descritores de Texturas e Redes Neurais Artificiais," in <i>Workshop da pós-graduação e Workshop da Computação 2016</i>, 2016, Planaltina, Distrito Federal.</a>
+                </li>
+                <br>
+                <li>
+                  <a href="" onclick="window.open('https://drive.google.com/file/d/0B5llfR7_3kcsS212OG5idEVYYVE/view?usp=sharing');window.open('http://developingworldrobotics.org/listing/project-edubot/');edubotICRA()">SILVA, M. M. E.; KUSSABA, H. T. M., "Project Edubot," in <i>Developing Countries Forum at ICRA 2015</i>, 2015, Seattle, Washington.</a>
+                </li>
+                <br>
+                <li>
+                  <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsZE1yYVlXNmY2VjQ/view?usp=sharing" onclick="proic2013_2014()">SILVA, M. M. E., "Localização e Mapeamento," in <i>XX Congresso de Iniciação Científica da UnB e XI Congresso de Iniciação Científica do Distrito Federal</i>, 2014, Brasília, Distrito Federal.</a>
+                </li>
+                <br>
+                <li>
+                  <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsMkk2YzJ5LWFIckU/view?usp=sharing" onclick="proic2012_2013()">SILVA, M. M. E., "Implementação de Algoritmos Clássicos para Mapeamento de Ambientes," in <i>XIX Congresso de Iniciação Científica da UnB e X Congresso de Iniciação Científica do Distrito Federal</i>, 2013, Brasília, Distrito Federal.</a>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </uib-accordion>
 
   </div>
 </div>
