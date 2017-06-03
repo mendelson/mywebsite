@@ -60,7 +60,7 @@ app.controller("PublicationsCtrl", function ($scope) {
     hitType: 'event',
     eventCategory: 'Publications',
     eventAction: 'access',
-    eventLabel: 'Pulications Page Access'
+    eventLabel: 'Publications Page Access'
   });
 });
 app.controller("ResourcesCtrl", function ($scope) {
