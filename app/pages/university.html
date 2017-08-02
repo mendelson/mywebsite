@@ -1,0 +1,56 @@
+<div class="content-section">
+  <div class="container">
+
+    <!-- Page title -->
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 ng-if="enUS" class="section-heading">University</h2>
+        <h2 ng-if="ptBR" class="section-heading">Universidade</h2>
+      </div>
+    </div>
+
+    <!-- UnB FGA 2/2017 -->
+    <uib-accordion close-others="false">
+      <div uib-accordion-group class="panel-default" is-open="status.openUnBFGA2_2017">
+        <uib-accordion-heading>
+          <h4 ng-if="enUS"><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openUnBFGA2_2017, 'glyphicon-chevron-right': !status.openUnBFGA2_2017}"></i>Courses UnB FGA 2/2017</h4>
+          <h4 ng-if="ptBR"><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openUnBFGA2_2017, 'glyphicon-chevron-right': !status.openUnBFGA2_2017}"></i>Disciplinas UnB FGA 2/2017</h4>
+        </uib-accordion-heading>
+        <div class="row content-margin-bottom">
+          <div class="col-md-12 col-sm-12">
+            <p>
+              <ul ng-if="enUS" class="citations">
+                <li>
+                  <a target="_blank" href="https://matriculaweb.unb.br/graduacao/disciplina_pop.aspx?cod=113476" onclick="apc()">113476</a>: Algorithms and Computer Programming
+                    <ul>
+                      <li>
+                        6 credits per class: 2 (theory) + 4 (practice)
+                      </li>
+                      <li>
+                        Classes: CC and FF
+                      </li>
+                    </ul>
+                </li>
+              </ul>
+
+              <ul ng-if="ptBR" class="citations">
+                <li>
+                  <a target="_blank" href="https://matriculaweb.unb.br/graduacao/disciplina_pop.aspx?cod=113476" onclick="apc()">113476</a>: Algoritmos e Programação de Computadores
+                    <ul>
+                      <li>
+                        6 créditos por turma: 2 (teoria) + 4 (prática)
+                      </li>
+                      <li>
+                        Turmas: CC e FF
+                      </li>
+                    </ul>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </uib-accordion>
+
+  </div>
+</div>

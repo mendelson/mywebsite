@@ -108,6 +108,16 @@ function zaghettoPage () {
   });
 }
 
+// University
+function apc () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'University',
+    eventAction: 'click',
+    eventLabel: 'APC MW'
+  });
+}
+
 // Publications
 function sbrt2016 () {
   ga('send', {

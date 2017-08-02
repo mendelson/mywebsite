@@ -12,6 +12,10 @@ app.config(function($routeProvider, $locationProvider) {
     templateUrl : "pages/home.html",
     controller: "HomeCtrl"
   })
+  .when("/university", {
+    templateUrl : "pages/university.html",
+    controller: "UniversityCtrl"
+  })
   .when("/publications", {
     templateUrl : "pages/publications.html",
     controller: "PublicationsCtrl"
@@ -46,6 +50,19 @@ app.controller("HomeCtrl", function ($scope) {
     eventCategory: 'Home',
     eventAction: 'access',
     eventLabel: 'Home Page Access'
+  });
+});
+app.controller("UniversityCtrl", function ($scope) {
+  $scope.status = {
+    openUnBFGA2_2017: false
+  };
+
+  // Google Analytics
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'University',
+    eventAction: 'access',
+    eventLabel: 'University Page Access'
   });
 });
 app.controller("PublicationsCtrl", function ($scope) {

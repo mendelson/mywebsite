@@ -44,9 +44,9 @@
   <script>
   window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
   // Testing
-  // ga('create', 'UA-40476736-2', 'auto');
+  ga('create', 'UA-40476736-2', 'auto');
   // Production
-  ga('create', 'UA-40476736-3', 'auto');
+  // ga('create', 'UA-40476736-3', 'auto');
   ga('send', 'pageview');
   </script>
   <script async src='https://www.google-analytics.com/analytics.js'></script>
@@ -84,6 +84,9 @@
               <a ng-if="enUS" href="#/home">Home</a>
               <a ng-if="ptBR" href="#/home">Home</a>
             </li>
+            <li>
+              <a ng-if="enUS" href="#/university">University</a>
+              <a ng-if="ptBR" href="#/university">Universidade</a>
             <li>
               <a ng-if="enUS" href="#/publications">Publications</a>
               <a ng-if="ptBR" href="#/publications">Publicações</a>
