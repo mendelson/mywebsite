@@ -120,6 +120,7 @@ app.controller("AboutCtrl", function ($scope) {
   });
 });
 app.controller("FormCtrl", function ($scope) {
+  window.location.href = "http://google.com"
 });
 app.controller("404Ctrl", function ($scope) {
   // Google Analytics
