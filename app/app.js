@@ -35,6 +35,10 @@ app.config(function($routeProvider, $locationProvider) {
     templateUrl: "pages/about.html",
     controller: "AboutCtrl"
   })
+  .when("/form_mestrado", {
+    templateUrl: "pages/form_mestrado.html",
+    controller: "FormCtrl"
+  })
   .otherwise({
     templateUrl:"pages/404.html",
     controller: "404Ctrl"
@@ -114,6 +118,8 @@ app.controller("AboutCtrl", function ($scope) {
     eventAction: 'access',
     eventLabel: 'About Page Access'
   });
+});
+app.controller("FormCtrl", function ($scope) {
 });
 app.controller("404Ctrl", function ($scope) {
   // Google Analytics
