@@ -120,6 +120,14 @@ app.controller("AboutCtrl", function ($scope) {
   });
 });
 app.controller("FormCtrl", function ($scope) {
+  // Google Analytics
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'FormMestrado',
+    eventAction: 'access',
+    eventLabel: 'Acesso Form Mestrado'
+  });
+  
   window.location.href = "https://goo.gl/forms/zqJXfP1dWbw3HV022"
 });
 app.controller("404Ctrl", function ($scope) {
