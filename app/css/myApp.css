@@ -104,6 +104,12 @@ ul li a:active {
   color: black;
 }
 
+/*ol li::before {
+  content: "";
+  width: 5px;
+  display: inline-block;
+}*/
+
 /* Home */
 .homeContent {
   margin-top: 5vh;
@@ -142,6 +148,12 @@ ul li a:active {
 
 .publications li {
   width: 75%;
+  font-weight: initial;
+}
+
+.publications a {
+  display: block;
+  margin-left: 5px;
 }
 
 /* Resources */

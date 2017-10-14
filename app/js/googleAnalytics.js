@@ -119,6 +119,30 @@ function apc () {
 }
 
 // Publications
+function ijcb2017 () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Publications',
+    eventAction: 'click',
+    eventLabel: 'IJCB 2017'
+  });
+}
+function ijcb2017_poster () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Publications',
+    eventAction: 'click',
+    eventLabel: 'IJCB 2017 Poster'
+  });
+}
+function ijcb2017_spotlight () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Publications',
+    eventAction: 'click',
+    eventLabel: 'IJCB 2017 Spotlight Presentation'
+  });
+}
 function sbrt2016 () {
   ga('send', {
     hitType: 'event',
