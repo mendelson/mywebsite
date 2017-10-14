@@ -107,6 +107,14 @@ function zaghettoPage () {
     eventLabel: 'Zaghetto Homepage'
   });
 }
+function bitgroupPage () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Home',
+    eventAction: 'click',
+    eventLabel: 'BiTGroup Homepage'
+  });
+}
 
 // University
 function apc () {
