@@ -125,6 +125,14 @@ function apc () {
     eventLabel: 'APC MW'
   });
 }
+function pizzaCC_2_2017 () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'University',
+    eventAction: 'click',
+    eventLabel: 'Pizza day CC 2/2017'
+  });
+}
 
 // Publications
 function ijcb2017 () {

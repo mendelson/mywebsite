@@ -44,6 +44,11 @@ p {
   margin: 30px;
 }
 
+.showIsLink {
+  /*text-decoration: underline;*/
+  color: dimgray !important;
+}
+
 /* Mobile/tablet */
 .show-on-tablet {
   display: none;
@@ -103,12 +108,6 @@ ul li a:hover {
 ul li a:active {
   color: black;
 }
-
-/*ol li::before {
-  content: "";
-  width: 5px;
-  display: inline-block;
-}*/
 
 /* Home */
 .homeContent {
