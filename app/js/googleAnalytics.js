@@ -135,6 +135,14 @@ function pizzaCC_2_2017 () {
 }
 
 // Publications
+function wvc2017 () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Publications',
+    eventAction: 'click',
+    eventLabel: 'WVC 2017'
+  });
+}
 function ijcb2017 () {
   ga('send', {
     hitType: 'event',
@@ -173,6 +181,14 @@ function monografia () {
     eventCategory: 'Publications',
     eventAction: 'click',
     eventLabel: 'Monografia Graduação'
+  });
+}
+function wpos_wcomp2017 () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Publications',
+    eventAction: 'click',
+    eventLabel: 'WPOS/WCOMP 2017'
   });
 }
 function wpos_wcomp2016 () {
@@ -247,6 +263,14 @@ function monoGrad () {
     eventCategory: 'Resources',
     eventAction: 'click',
     eventLabel: 'Slides Projeto Final em Engenharia de Computação'
+  });
+}
+function slideWpos_wcomp2017 () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Resources',
+    eventAction: 'click',
+    eventLabel: 'Slides WPOS/WCOMP 2017'
   });
 }
 function slideWpos_wcomp2016 () {
