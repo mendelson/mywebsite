@@ -90,6 +90,7 @@ app.controller("ResourcesCtrl", function ($scope) {
     openMono: false,
     openWPOS_WCOMP: false,
     openFGADemo: false,
+    openVid: false,
     openBanners: false
   };
 
@@ -127,7 +128,7 @@ app.controller("FormCtrl", function ($scope) {
     eventAction: 'access',
     eventLabel: 'Acesso Form Mestrado'
   });
-  
+
   window.location.href = "https://goo.gl/forms/zqJXfP1dWbw3HV022"
 });
 app.controller("404Ctrl", function ($scope) {
