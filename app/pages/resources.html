@@ -11,22 +11,25 @@
 
     <!-- Page content-->
     <uib-accordion close-others="false">
-      <!-- Seminários Professora Celia -->
-      <div uib-accordion-group is-open="status.openSeminarios">
+      <!-- Posters -->
+      <div uib-accordion-group class="panel-default" is-open="status.openBanners">
         <uib-accordion-heading>
-          <h4 ng-if="enUS"><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openSeminarios, 'glyphicon-chevron-right': !status.openSeminarios}"></i>PPGInf Seminars</h4>
-          <h4 ng-if="ptBR"><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openSeminarios, 'glyphicon-chevron-right': !status.openSeminarios}"></i>Seminários PPGInf</h4>
+          <h4><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openBanners, 'glyphicon-chevron-right': !status.openBanners}"></i>Posters</h4>
         </uib-accordion-heading>
         <div class="row content-margin-bottom">
           <div class="col-md-12 col-sm-12">
             <p>
               <ul class="citations">
                 <li>
-                  <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsb2UzZVhPN01UWEk/view?usp=sharing" onclick="seminariosTransportMode()">Transport Mode Detection Using Mobile Phones and Artificial Neural Networks for Accident Prevention</a>
+                  <a target="_blank" href="http://bitgroup.co/wp-content/uploads/IJCB2017_Poster_Crop.pdf" onclick="ijcb2017_poster()">IJCB 2017</a>
                 </li>
                 <br>
                 <li>
-                  <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsajNiMWREdmNBTDA/view?usp=sharing" onclick="seminariosSpoofing()">Detecção de Fraudes em Leitores de Impressões Digitais sem Contato Utilizando Descritores de Texturas e Redes Neurais Artificiais</a>
+                  <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsajFHWjhXNGJvck0/view?usp=sharing" onclick="bannerProic2013_2014()">ProIC 2013/2014</a>
+                </li>
+                <br>
+                <li>
+                  <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsaGNzbUEzOGNJclk/view?usp=sharing" onclick="bannerProic2012_2013()">ProIC 2012/2013</a>
                 </li>
               </ul>
             </p>
@@ -49,6 +52,29 @@
                 <br>
                 <li>
                   <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsb2FNSWNqV2JXeW8/view?usp=sharing" onclick="slideWpos_wcomp2016()">Slides 2016</a>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seminários Professora Celia -->
+      <div uib-accordion-group is-open="status.openSeminarios">
+        <uib-accordion-heading>
+          <h4 ng-if="enUS"><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openSeminarios, 'glyphicon-chevron-right': !status.openSeminarios}"></i>PPGInf Seminars</h4>
+          <h4 ng-if="ptBR"><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openSeminarios, 'glyphicon-chevron-right': !status.openSeminarios}"></i>Seminários PPGInf</h4>
+        </uib-accordion-heading>
+        <div class="row content-margin-bottom">
+          <div class="col-md-12 col-sm-12">
+            <p>
+              <ul class="citations">
+                <li>
+                  <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsb2UzZVhPN01UWEk/view?usp=sharing" onclick="seminariosTransportMode()">Transport Mode Detection Using Mobile Phones and Artificial Neural Networks for Accident Prevention</a>
+                </li>
+                <br>
+                <li>
+                  <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsajNiMWREdmNBTDA/view?usp=sharing" onclick="seminariosSpoofing()">Detecção de Fraudes em Leitores de Impressões Digitais sem Contato Utilizando Descritores de Texturas e Redes Neurais Artificiais</a>
                 </li>
               </ul>
             </p>
@@ -91,32 +117,6 @@
                 <br>
                 <li>
                   <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsczNkLUtfYWJ0eTQ/view?usp=sharing" onclick="fgaPlanoAulaCI()">Plano de Aula - Integração Contínua</a>
-                </li>
-              </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Banners -->
-      <div uib-accordion-group class="panel-default" is-open="status.openBanners">
-        <uib-accordion-heading>
-          <h4><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openBanners, 'glyphicon-chevron-right': !status.openBanners}"></i>Posters</h4>
-        </uib-accordion-heading>
-        <div class="row content-margin-bottom">
-          <div class="col-md-12 col-sm-12">
-            <p>
-              <ul class="citations">
-                <li>
-                  <a target="_blank" href="http://bitgroup.co/wp-content/uploads/IJCB2017_Poster_Crop.pdf" onclick="ijcb2017_poster()">IJCB 2017</a>
-                </li>
-                <br>
-                <li>
-                  <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsajFHWjhXNGJvck0/view?usp=sharing" onclick="bannerProic2013_2014()">ProIC 2013/2014</a>
-                </li>
-                <br>
-                <li>
-                  <a target="_blank" href="https://drive.google.com/file/d/0B5llfR7_3kcsaGNzbUEzOGNJclk/view?usp=sharing" onclick="bannerProic2012_2013()">ProIC 2012/2013</a>
                 </li>
               </ul>
             </p>
