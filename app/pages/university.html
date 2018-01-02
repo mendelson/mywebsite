@@ -9,6 +9,59 @@
       </div>
     </div>
 
+    <!-- UnB FGA 0/2018 -->
+    <uib-accordion close-others="false">
+      <div uib-accordion-group class="panel-default" is-open="status.openUnBFGA0_2018">
+        <uib-accordion-heading>
+          <h4 ng-if="enUS"><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openUnBFGA0_2018, 'glyphicon-chevron-right': !status.openUnBFGA0_2018}"></i>Courses UnB FGA 0/2018</h4>
+          <h4 ng-if="ptBR"><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openUnBFGA0_2018, 'glyphicon-chevron-right': !status.openUnBFGA0_2018}"></i>Disciplinas UnB FGA 0/2018</h4>
+        </uib-accordion-heading>
+        <div class="row content-margin-bottom">
+          <div class="col-md-12 col-sm-12">
+            <p>
+              <ul ng-if="enUS" class="citations">
+                <li>
+                  Programming basics with LEGO MINDSTORMS
+                    <ul>
+                      <li>
+                        30-hour extracurricular course
+                      </li>
+                      <li>
+                        30 students
+                        <!-- <ul>
+                          <li>
+                            <a class="showIsLink" target="_blank" href="https://photos.app.goo.gl/eBfbrJNkmJu9EfEz1" onclick="pizzaCC_2_2017()">Pizza day - CC</a>
+                          </li>
+                        </ul> -->
+                      </li>
+                    </ul>
+                </li>
+              </ul>
+
+              <ul ng-if="ptBR" class="citations">
+                <li>
+                  Princípios de Programação com LEGO MINDSTORMS
+                    <ul>
+                      <li>
+                        Curso de extensão
+                      </li>
+                      <li>
+                        30 alunos
+                        <!-- <ul>
+                          <li>
+                            <a class="showIsLink" target="_blank" href="https://photos.app.goo.gl/eBfbrJNkmJu9EfEz1" onclick="apc()">Dia da pizza - CC</a>
+                          </li>
+                        </ul> -->
+                      </li>
+                    </ul>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </uib-accordion>
+
     <!-- UnB FGA 2/2017 -->
     <uib-accordion close-others="false">
       <div uib-accordion-group class="panel-default" is-open="status.openUnBFGA2_2017">

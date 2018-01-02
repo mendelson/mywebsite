@@ -58,8 +58,10 @@ app.controller("HomeCtrl", function ($scope) {
 });
 app.controller("UniversityCtrl", function ($scope) {
   $scope.status = {
+    openUnBFGA0_2018: false,
     openUnBFGA2_2017: false
   };
+
 
   // Google Analytics
   ga('send', {
@@ -91,7 +93,8 @@ app.controller("ResourcesCtrl", function ($scope) {
     openWPOS_WCOMP: false,
     openFGADemo: false,
     openVid: false,
-    openBanners: false
+    openBanners: false,
+    openLEGO: false
   };
 
   // Google Analytics

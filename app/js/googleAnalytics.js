@@ -297,3 +297,11 @@ function bannerProic2012_2013 () {
     eventLabel: 'Banner ProIC 2012/2013'
   });
 }
+function rileyRover () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Resources',
+    eventAction: 'click',
+    eventLabel: 'Instruções de Montagem LEGO - RileyRover'
+  });
+}
