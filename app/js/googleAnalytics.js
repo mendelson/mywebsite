@@ -305,3 +305,11 @@ function rileyRover () {
     eventLabel: 'Instruções de Montagem LEGO - RileyRover'
   });
 }
+function legoIntro () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Resources',
+    eventAction: 'click',
+    eventLabel: 'Fundamentos de Robótica - Introdução'
+  });
+}
