@@ -313,3 +313,11 @@ function legoIntro () {
     eventLabel: 'Fundamentos de Robótica - Introdução'
   });
 }
+function lego02 () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Resources',
+    eventAction: 'click',
+    eventLabel: 'Fundamentos de Robótica - Sons, tela, luzes e operadores'
+  });
+}
