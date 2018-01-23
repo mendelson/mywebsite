@@ -321,3 +321,11 @@ function lego02 () {
     eventLabel: 'Fundamentos de Robótica - Sons, tela, luzes e operadores'
   });
 }
+function lego03 () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Resources',
+    eventAction: 'click',
+    eventLabel: 'Fundamentos de Robótica - Fluxogramas e Sensor de Cor'
+  });
+}
