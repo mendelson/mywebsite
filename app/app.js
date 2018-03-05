@@ -58,6 +58,7 @@ app.controller("HomeCtrl", function ($scope) {
 });
 app.controller("UniversityCtrl", function ($scope) {
   $scope.status = {
+    openUnBFGA1_2018: false,
     openUnBFGA0_2018: false,
     openUnBFGA2_2017: false
   };

@@ -117,6 +117,22 @@ function bitgroupPage () {
 }
 
 // University
+function eda1_1_2018 () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'University',
+    eventAction: 'click',
+    eventLabel: 'EDA1 1/2018 MW'
+  });
+}
+function fso_1_2018 () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'University',
+    eventAction: 'click',
+    eventLabel: 'FSO 1/2018 MW'
+  });
+}
 function apc () {
   ga('send', {
     hitType: 'event',
