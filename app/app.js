@@ -1,5 +1,11 @@
 'use strict';
 
+const aws = require(['aws-sdk']);
+let s3 = new aws.S3({
+  AK: process.env.ANALYTICS_KEY
+});
+ga('create', s3.AK, 'auto');
+
 var app = angular.module("myApp", ["ngRoute", "ngAnimate", "ngSanitize", "ui.bootstrap"]);
 app.config(function($routeProvider, $locationProvider) {
   // app.config(function($routeProvider) {
@@ -62,7 +68,6 @@ app.controller("UniversityCtrl", function ($scope) {
     openUnBFGA0_2018: false,
     openUnBFGA2_2017: false
   };
-
 
   // Google Analytics
   ga('send', {
