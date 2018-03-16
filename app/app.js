@@ -1,11 +1,5 @@
 'use strict';
 
-const aws = require(['aws-sdk']);
-let s3 = new aws.S3({
-  AK: process.env.ANALYTICS_KEY
-});
-ga('create', s3.AK, 'auto');
-
 var app = angular.module("myApp", ["ngRoute", "ngAnimate", "ngSanitize", "ui.bootstrap"]);
 app.config(function($routeProvider, $locationProvider) {
   // app.config(function($routeProvider) {
