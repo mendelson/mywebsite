@@ -29,6 +29,7 @@
   <!-- Scripts -->
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
   <script src="https://use.fontawesome.com/6aeb92b302.js"></script>
+  <script src="http://requirejs.org/docs/release/2.2.0/minified/require.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
@@ -46,7 +47,7 @@
   // Testing
   // ga('create', 'UA-40476736-2', 'auto');
   // Production
-  // const aws = require('aws-sdk');
+  const aws = require('aws-sdk');
 
   let s3 = new aws.S3({
     AK: process.env.ANALYTICS_KEY
