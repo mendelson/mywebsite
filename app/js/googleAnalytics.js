@@ -273,6 +273,14 @@ function fgaPlanoAulaCI () {
     eventLabel: 'Plano de Aula FGA 2017 - Integração Contínua'
   });
 }
+function monoMast () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Resources',
+    eventAction: 'click',
+    eventLabel: 'Slides Mestrado Sistemas Mecatrônicos'
+  });
+}
 function monoGrad () {
   ga('send', {
     hitType: 'event',
