@@ -273,6 +273,22 @@ function fgaPlanoAulaCI () {
     eventLabel: 'Plano de Aula FGA 2017 - Integração Contínua'
   });
 }
+function projPlanoAula () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Resources',
+    eventAction: 'click',
+    eventLabel: 'Plano de Aula Projeção Aula Pública'
+  });
+}
+function projAula () {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Resources',
+    eventAction: 'click',
+    eventLabel: 'Aula Pública Projeção'
+  });
+}
 function monoMast () {
   ga('send', {
     hitType: 'event',
