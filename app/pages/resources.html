@@ -147,6 +147,29 @@
         </div>
       </div>
 
+      <!-- Projeção Class -->
+      <div uib-accordion-group class="panel-default" is-open="status.openProj">
+        <uib-accordion-heading>
+          <h4 ng-if="enUS"><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openProj, 'glyphicon-chevron-right': !status.openProj}"></i>Projeção Demo Class</h4>
+          <h4 ng-if="ptBR"><i class="pull-left glyphicon" ng-class="{'glyphicon-chevron-down': status.openProj, 'glyphicon-chevron-right': !status.openProj}"></i>Aula Pública Projeção</h4>
+        </uib-accordion-heading>
+        <div class="row content-margin-bottom">
+          <div class="col-md-12 col-sm-12">
+            <p>
+              <ul class="citations">
+                <li>
+                  <a target="_blank" href="https://drive.google.com/open?id=1cF5_rvh9uB_LaG5lq3NhqcLfw3_biApd" onclick="projAula()">Slides - Arquivos</a>
+                </li>
+                <br>
+                <li>
+                  <a target="_blank" href="https://drive.google.com/open?id=1wUsHv_pOJufZ_HkRr-sF6rHNEl-bOlLP" onclick="projPlanoAula()">Plano de Aula - Arquivos</a>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
       <!-- LEGO 0_2018 -->
       <div uib-accordion-group class="panel-default" is-open="status.openLEGO">
         <uib-accordion-heading>
