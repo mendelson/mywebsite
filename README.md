@@ -1,3 +1,7 @@
+# What this bunch of code is #
+
+I used this repo to manage my old website. You should notice that it is a highly modified version of templates from angular, bootstrap and some other stuff. Due to the effort necessary to maintain this code (also known as laziness), I decided to migrate to Wordpress. Feel free to look around the code and get in touch with me. Also, visit my [current website](http://mmendelson.com).
+
 # `angular-seed` — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS][angularjs] web app. You can use it
